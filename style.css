@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1517602302552-471fe67acf66') center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), #000);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+}
+
+.hero h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 4rem;
+}
+
+.hero button {
+  margin-top: 25px;
+  padding: 14px 40px;
+  border-radius: 30px;
+  border: none;
+  background: #e50914;
+  color: white;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.hero button:hover {
+  transform: scale(1.1);
+}
+
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 120px;
+  gap: 50px;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* EVENTS */
+.events {
+  padding: 120px;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.event-card {
+  height: 400px;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform .4s;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.event-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, black, transparent);
+}
+
+/* GALLERY */
+.gallery {
+  padding: 120px;
+}
+
+.gallery-grid {
+  columns: 3;
+  column-gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  transition: transform .3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* TEAM */
+.team {
+  padding: 120px;
+  text-align: center;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.member img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* JOIN */
+.join {
+  padding: 120px;
+  background: linear-gradient(135deg, #111, #000);
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+}
+
+form button {
+  padding: 15px;
+  background: #e50914;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  color: #777;
+}
